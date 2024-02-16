@@ -42,13 +42,13 @@ code {
 }
 
 .note.new {
-  background-color: #67d7cc;
+  background-color: #ff474a;
 }
 
 textarea {
   border: none;
   resize: none;
-  background-color: #67d7cc;
+  background-color: #f1f1f1;
 }
 
 textarea:focus {
@@ -56,26 +56,27 @@ textarea:focus {
 }
 
 .save {
-  background-color: #e1e1e1;
+  background-color: #ffffff;
   border: none;
   border-radius: 15px;
   padding: 5px 10px 5px 10px;
 }
 
 .save:hover {
-  background-color: #ededed;
+  background-color: #f5ed04;
   cursor: pointer;
 }
 
 .note {
-  background-color: #fef68a;
+  background-color: #eee674; /* Change background color to white */
+  color: #ff474a; /* Change text color to ff474a */
   border-radius: 15px;
   padding: 1rem;
   min-height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  white-space: pre-wrap;
+  white-space: pre-wrap; /* keep the line spacing that was added to the text */
 }
 
 .note-footer {
@@ -86,23 +87,50 @@ textarea:focus {
 
 .delete-icon {
   cursor: pointer;
+  font-size: 20px;
+}
+.delete-icon:hover {
+  color: red; /* Change the color to red on hover */
+}
+.theme-change {
+  background-color: #ffffff;
+  border: 2px solid #806473; /* Add border */
+  border-radius: 25px; /* Increase border radius */
+  padding: 10px 20px; /* Increase padding */
+  font-size: 16px; /* Increase font size */
+  color: #806473; /* Change text color */
+  font-weight: bold; /* Make text bold */
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.theme-change:hover {
+  background-color: #806473;
+  color: #ffffff; /* Change text color on hover */
+  cursor: pointer;
 }
 
 .search {
   display: flex;
   align-items: center;
-  background-color: rgb(233, 233, 233);
-  border-radius: 10px;
-  padding: 5px;
+  background-color: #f0f0f0; /* Light gray background */
+  border-radius: 20px; /* Rounded corners */
+  padding: 10px; /* Increased padding */
   margin-bottom: 1.5em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
 
 .search input {
   border: none;
-  background-color: rgb(233, 233, 233);
+  background-color: transparent; /* Transparent background */
   width: 100%;
+  padding: 5px; /* Adjust padding */
+  font-size: 16px; /* Adjust font size */
+}
+
+.search input::placeholder {
+  color: #a0a0a0cd; /* Placeholder color */
 }
 
 .search input:focus {
-  outline: none;
+  outline: none; /* Remove outline on focus */
 }
